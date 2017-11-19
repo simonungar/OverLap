@@ -7,12 +7,12 @@
     tools:context="com.example.simonungar.pageswitching.Login">
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText3"
+        android:layout_above="@+id/password"
         android:layout_alignEnd="@+id/imageView3"
-        android:layout_alignStart="@+id/editText3"
+        android:layout_alignStart="@+id/password"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Username"
@@ -21,10 +21,10 @@
         tools:layout_editor_absoluteY="329dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/LoginButton"
         android:layout_alignEnd="@+id/imageView3"
         android:layout_alignStart="@+id/imageView3"
         android:layout_marginBottom="20dp"
@@ -35,22 +35,22 @@
         tools:layout_editor_absoluteY="382dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/LoginButton"
         android:layout_width="100dp"
         android:layout_height="52dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText3"
+        android:layout_alignStart="@+id/password"
         android:layout_marginBottom="80dp"
         android:text="LOGIN"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="440dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/CreateAcct"
         android:layout_width="200dp"
         android:layout_height="52dp"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignBottom="@+id/LoginButton"
+        android:layout_alignEnd="@+id/password"
         android:text="Create an Account"
         tools:layout_editor_absoluteX="181dp"
         tools:layout_editor_absoluteY="440dp" />

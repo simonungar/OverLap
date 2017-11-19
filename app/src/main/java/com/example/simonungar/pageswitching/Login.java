@@ -19,15 +19,32 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        configureNextButton();
+        configureButtons();
     }
 
-    private void configureNextButton() {
-        Button nextButton = (Button) findViewById(R.id.nextButton);
-        nextButton.setOnClickListener(new View.OnClickListener() {
+    public void configureButtons() {
+
+        Button LoginButton = (Button) findViewById(R.id.LoginButton);
+        LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Login.this, HomePage.class));
+                Intent intent = new Intent (view.getContext(), HomePage.class);
+                boolean serverstuff = true;
+                // TODO - pass username/password to back end, set $serverstuff to true if it matches an existing user credential
+                // TODO - otherwise, return false.(The behaviour should be only move to hompage if they are a existing user)
+                if (serverstuff)
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+            }
+        });
+
+
+
+        Button CreateAcct = (Button) findViewById(R.id.CreateAcct);
+        CreateAcct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, AccountCreator.class));
             }
         });
     }
