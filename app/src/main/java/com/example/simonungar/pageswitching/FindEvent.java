@@ -11,3 +11,5 @@ public class FindEvent extends AppCompatActivity {
         setContentView(R.layout.activity_find_event);
     }
 }
+// TODO - the xml currently just has a search bar and 3 buttons. we need to get the search bar to search upon pressing <enter>
+// TODO - and we also need the buttons to refresh the feed (which is in the space below) based on which button was pressed.

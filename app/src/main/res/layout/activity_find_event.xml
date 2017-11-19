@@ -7,56 +7,39 @@
     tools:context="com.example.simonungar.overlap320.FindEvent">
 
     <EditText
-        android:id="@+id/password"
-        android:layout_width="285dp"
-        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="29dp"
         android:ems="10"
-        android:hint="Search Group"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="26dp" />
+        android:text="Search" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="285dp"
-        android:layout_height="74dp"
-        android:layout_alignStart="@+id/password"
-        android:layout_below="@+id/password"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:hint="Groups found"
-        android:inputType="textMultiLine|textLongMessage"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="172dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="17dp"
+        android:text="Time" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="285dp"
-        android:layout_height="74dp"
-        android:layout_alignStart="@+id/editText8"
-        android:layout_below="@+id/editText8"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:hint="Groups found"
-        android:inputType="textMultiLine|textLongMessage"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="285dp" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:text="Location" />
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="285dp"
-        android:layout_height="74dp"
-        android:layout_alignStart="@+id/editText9"
-        android:layout_below="@+id/editText9"
-        android:layout_marginTop="51dp"
-        android:ems="10"
-        android:hint="Groups found"
-        android:inputType="textMultiLine|textLongMessage"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="398dp" />
-
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignTop="@+id/button6"
+        android:text="Activity" />
 </RelativeLayout>

@@ -8,125 +8,121 @@
 
     <EditText
         android:id="@+id/editText15"
-        android:layout_width="136dp"
-        android:layout_height="40dp"
-        android:layout_alignBaseline="@+id/editText16"
-        android:layout_alignBottom="@+id/editText16"
-        android:layout_alignStart="@+id/username"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="17dp"
         android:ems="10"
-        android:hint="time"
         android:inputType="time"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <EditText
-        android:id="@+id/editText16"
-        android:layout_width="136dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/editText18"
-        android:layout_alignEnd="@+id/editText7"
-        android:layout_marginBottom="10dp"
-        android:ems="10"
-        android:hint="date"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <EditText
-        android:id="@+id/editText17"
-        android:layout_width="136dp"
-        android:layout_height="40dp"
-        android:layout_alignEnd="@+id/CreateAcct"
-        android:layout_below="@+id/editText18"
-        android:layout_marginTop="7dp"
-        android:ems="10"
-        android:hint="time"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-    <EditText
-        android:id="@+id/editText18"
-        android:layout_width="136dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/CreateAcct"
-        android:layout_alignStart="@+id/editText16"
-        android:layout_marginBottom="9dp"
-        android:ems="10"
-        android:hint="date"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-    <Button
-        android:id="@+id/CreateAcct"
-        android:layout_width="145dp"
-        android:layout_height="49dp"
-        android:layout_above="@+id/editText19"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:text="Add Event"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="145dp"
-        android:layout_height="49dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText17"
-        android:layout_marginBottom="87dp"
-        android:text="Delete Event"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="412dp" />
-
-    <EditText
-        android:id="@+id/editText19"
-        android:layout_width="288dp"
-        android:layout_height="48dp"
-        android:layout_above="@+id/editText20"
-        android:layout_alignStart="@+id/username"
-        android:layout_marginBottom="33dp"
-        android:ems="10"
-        android:inputType="textMultiLine|textShortMessage"
-        android:text="7:00 am - 9:00 am "
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="276dp" />
-
-    <EditText
-        android:id="@+id/editText20"
-        android:layout_width="288dp"
-        android:layout_height="48dp"
-        android:layout_above="@+id/button4"
-        android:layout_alignStart="@+id/editText19"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:inputType="textNoSuggestions|textShortMessage"
-        android:text="5:30 pm - 6:30 pm "
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="348dp" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="136dp"
-        android:layout_height="40dp"
-        android:layout_alignBaseline="@+id/editText18"
-        android:layout_alignBottom="@+id/editText18"
-        android:layout_alignStart="@+id/editText7"
-        android:ems="10"
-        android:hint="time"
-        android:inputType="time" />
+        android:text="Time" />
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="288dp"
+        android:layout_width="310dp"
         android:layout_height="45dp"
-        android:layout_above="@+id/editText15"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="none|textPersonName"
-        android:text="Add Unavailability"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="Edit Schedle"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_below="@+id/editText7"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText5"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignStart="@+id/editText22"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText15"
+        android:layout_alignBottom="@+id/editText15"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/editText15"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText15"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/editText15"
+        android:text="Add Block" />
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText15"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/editText24"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText23"
+        android:layout_below="@+id/editText23"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/editText25"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText24"
+        android:layout_alignStart="@+id/editText22"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/editText26"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText24"
+        android:layout_alignStart="@+id/editText25"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Remove Block" />
 
 </RelativeLayout>
