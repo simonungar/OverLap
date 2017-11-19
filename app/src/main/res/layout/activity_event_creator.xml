@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.simonungar.pageswitching.EventCreator">
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText12"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Name of event"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Time and Date"
+        android:inputType="datetime"
+        app:layout_constraintBottom_toTopOf="@+id/editText12"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_below="@+id/editText10"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPostalAddress"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="281dp"
+        android:layout_height="165dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:ems="10"
+        android:hint="Description of event"
+        android:inputType="textMultiLine|textLongMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/editText12"
+        android:layout_below="@+id/editText12"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Max No. of Spots"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@android:color/darker_gray"
+        android:text="Create"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="475dp" />
+</RelativeLayout>
