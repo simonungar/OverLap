@@ -28,7 +28,7 @@
         android:inputType="none|textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="Edit Schedle"
+        android:text="Edit Schedule"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <EditText
