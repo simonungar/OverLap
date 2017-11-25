@@ -16,14 +16,15 @@
         <activity android:name=".EventCreator" />
         <activity android:name=".FindEvent" />
         <activity android:name=".HomePage" />
-        <activity android:name=".Login">
+        <activity android:name=".Login"/>
+        <activity android:name=".Schedule" />
+        <activity android:name=".NewSchedule">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Schedule" />
         <activity android:name=".CreateGroup"></activity>
     </application>
 

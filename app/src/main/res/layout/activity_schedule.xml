@@ -29,6 +29,7 @@
         android:selectAllOnFocus="false"
         android:singleLine="false"
         android:text="Edit Schedule"
+        android:focusable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
     <EditText
