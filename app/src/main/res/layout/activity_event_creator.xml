@@ -10,8 +10,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText14"
-        android:layout_alignEnd="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox8"
+        android:layout_below="@+id/editText14"
         android:background="@android:color/darker_gray"
         android:text="Create"
         android:visibility="visible"
@@ -149,6 +149,20 @@
         android:layout_alignStart="@+id/checkBox5"
         android:layout_below="@+id/checkBox5"
         android:text="Friday" />
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_below="@+id/checkBox6"
+        android:text="Saturday" />
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_below="@+id/checkBox7"
+        android:text="Sunday" />
 
     <Spinner
         android:id="@+id/spinner"

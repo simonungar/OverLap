@@ -161,13 +161,16 @@
             <Switch
                 android:id="@+id/switch25"
                 android:layout_width="match_parent"
-                android:layout_height="45dp" />
+                android:layout_height="45dp"
+                android:checked="true"
+                tools:checked="true" />
 
             <Switch
                 android:id="@+id/switch24"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                tools:checked="false" />
+                android:checked="true"
+                tools:checked="true" />
 
             <Switch
                 android:id="@+id/switch23"

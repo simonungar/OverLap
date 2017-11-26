@@ -30,15 +30,15 @@ public class HomePage extends AppCompatActivity {
         itemIcon2.setImageDrawable(getDrawable(R.drawable.createevent));
         SubActionButton button2 = itemBuilder.setContentView(itemIcon2).build();
 
-        /*ImageView itemIcon3= new ImageView(this);
-        itemIcon3.setImageDrawable(getDrawable(R.drawable.groups));
-        SubActionButton button3 = itemBuilder.setContentView(itemIcon3).build(); */
+        ImageView itemIcon3= new ImageView(this);
+        itemIcon3.setImageDrawable(getDrawable(R.drawable.newfriend));
+        SubActionButton button3 = itemBuilder.setContentView(itemIcon3).build();
 
         ImageView itemIcon4= new ImageView(this);
         itemIcon4.setImageDrawable(getDrawable(R.drawable.groups));
         SubActionButton button4 = itemBuilder.setContentView(itemIcon4).build();
 
-        FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this).addSubActionView(button1).addSubActionView(button2).addSubActionView(button4).attachTo(actionButton).build();
+        FloatingActionMenu actionMenu = new FloatingActionMenu.Builder(this).addSubActionView(button1).addSubActionView(button2).addSubActionView(button3).addSubActionView(button4).attachTo(actionButton).build();
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,13 +56,13 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        /*button3.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent (view.getContext(), FindEvent.class);
+                Intent intent = new Intent (view.getContext(), CreateGroup.class);
                 startActivity(intent);
             }
-        }); */
+        });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override

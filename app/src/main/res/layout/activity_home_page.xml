@@ -21,7 +21,7 @@
                 android:layout_height="140dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/newevent" />
+                app:srcCompat="@drawable/lunch" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -29,7 +29,7 @@
                 android:layout_height="140dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/lunch" />
+                app:srcCompat="@drawable/newhome" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -37,7 +37,7 @@
                 android:layout_height="140dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/newhome" />
+                app:srcCompat="@drawable/underwater" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -45,7 +45,7 @@
                 android:layout_height="140dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/underwater" />
+                app:srcCompat="@drawable/jiraproject" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -53,7 +53,8 @@
                 android:layout_height="140dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/jiraproject" />
+                app:srcCompat="@drawable/bball" />
+
         </LinearLayout>
     </ScrollView>
 
