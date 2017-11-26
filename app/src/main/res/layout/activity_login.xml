@@ -30,7 +30,7 @@
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         tools:layout_editor_absoluteX="67dp"
         tools:layout_editor_absoluteY="382dp" />
 

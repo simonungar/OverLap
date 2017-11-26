@@ -6,83 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.simonungar.pageswitching.EventCreator">
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/editText12"
-        android:layout_marginTop="35dp"
-        android:ems="10"
-        android:hint="Activity Name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="40dp" />
-
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="100dp"
-        android:layout_height="46dp"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_below="@+id/editText6"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Time"
-        android:inputType="datetime"
-        app:layout_constraintBottom_toTopOf="@+id/editText12"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
-        tools:layout_editor_absoluteX="35dp" />
-
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:layout_alignStart="@+id/editText13"
-        android:layout_below="@+id/editText10"
-        android:layout_marginTop="21dp"
-        android:ems="10"
-        android:hint="Location"
-        android:inputType="textPostalAddress"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="152dp" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="281dp"
-        android:layout_height="165dp"
-        android:layout_below="@+id/editText14"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:gravity="bottom"
-        android:hint="Description of Activity"
-        android:inputType="textMultiLine|textLongMessage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="218dp" />
-
-    <EditText
-        android:id="@+id/editText14"
-        android:layout_width="188dp"
-        android:layout_height="48dp"
-        android:layout_alignStart="@+id/editText12"
-        android:layout_below="@+id/editText12"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="Max No. of Spots"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="395dp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
+        android:layout_alignBottom="@+id/editText14"
+        android:layout_alignEnd="@+id/checkBox6"
         android:background="@android:color/darker_gray"
         android:text="Create"
         android:visibility="visible"
@@ -91,12 +20,142 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="177dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText12"
-        android:layout_marginStart="12dp"
-        android:layout_toEndOf="@+id/editText10"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
         android:ems="10"
-        android:hint="Date"
-        android:inputType="date" />
+        android:hint="Activity Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Create Activity"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_below="@+id/editText11"
+        android:ems="10"
+        android:hint="End Bound"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Start Bound"
+        android:inputType="time" />
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_below="@+id/editText9"
+        android:ems="10"
+        android:hint="Duration"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_below="@+id/editText12"
+        android:ems="10"
+        android:hint="Min Spots"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText11"
+        android:layout_below="@+id/editText13"
+        android:ems="10"
+        android:hint="Max Spots"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/editText11"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/editText11"
+        android:text="Monday" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_below="@+id/checkBox2"
+        android:text="Tuesday" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_below="@+id/checkBox3"
+        android:text="Wednesday" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_below="@+id/checkBox4"
+        android:text="Thursday" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_below="@+id/checkBox5"
+        android:text="Friday" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
 </RelativeLayout>
