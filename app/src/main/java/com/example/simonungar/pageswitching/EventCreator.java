@@ -19,7 +19,7 @@ public class EventCreator extends AppCompatActivity {
         setContentView(R.layout.activity_event_creator);
 
         this.arraySpinner = new String[] {
-                 "C++ Anonymous","Ball Legends", "Fruit Machines Anonymous"
+                 "C++ Anonymous","Ball Legends", "Fruit Machines Anonymous","CISC 320 Support Group", "Water Polo"
         };
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
